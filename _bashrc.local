@@ -1,0 +1,25 @@
+
+# Alias
+alias ls='ls -F --color'
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+alias less='less -S -q'
+alias grep='grep --binary-files=without-match'
+alias pa='ps -eLo ppid,pid,tid,sid,class,rtprio,ni,pri,psr,pcpu,stat,tty,wchan:14,command'
+
+# Set LANG environment variable
+export LANG=C
+#export LANG=ja_JP.UTF-8
+
+# Set PATH environment variable
+export PATH=$PATH:~/bin
+
+# Set proxy environment variables
+#export http_proxy=http://proxy.hoge.co.jp:8080/
+#export https_proxy=http://proxy.hoge.co.jp:8080/
+#export ftp_proxy=http://proxy.hoge.co.jp:8080/
+#export no_proxy=.hoge.co.jp,127.0.0.1
+
+# Enable to I-search by Ctrl+s
+stty stop undef

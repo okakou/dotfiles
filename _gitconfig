@@ -1,0 +1,20 @@
+[color]
+	#ui = false
+	#diff = false
+	#log = false
+[user]
+	name = Kouta Okamoto
+	email = okakou0512@gmail.com
+[http]
+	postBuffer = 524288000
+	sslVerify = false
+[alias]
+	#graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+	graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %cd [%cn] %Cgreen%d%Creset %s\" --date=short
+[pack]
+	windowMemory = 100m
+	packSizeLimit = 100m
+[core]
+	pager = less -S
+[pull]
+	ff = only

@@ -1,0 +1,4 @@
+handle all nopass
+handle all noprint
+handle SIGSEGV pass
+handle SIGSEGV print

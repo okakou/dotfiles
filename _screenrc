@@ -1,0 +1,31 @@
+# Change prefix key to Ctl-t
+escape ^Tt
+
+# scroll buffer to 100000
+defscrollback 100000
+
+# auto detach if hung
+autodetach on
+
+# no message at the start
+startup_message off
+
+# recover terminal from vim or less
+altscreen on
+
+# encode
+defkanji utf-8
+defencoding utf8
+encoding utf8 utf8
+
+# caption
+caption always "%{= wb}%-w%{=bu dr}%n %t%{-}%+w %= %{=b wk}(%`)%{=b wk}[%l]%{=b wb}%y/%m/%d %{=b wm}%c"
+backtick 0 30 30 sh -c 'screen -ls | grep --color=no -o "$PPID[^[:space:]]*"'
+
+# key bind change
+#bind l split -v
+#bind r remove
+#bind t focus
+
+# reload .screen file by Ctl-t Ctl-r
+bind ^r eval "source $HOME/.screenrc" "echo '.screenrc reloaded!'"
